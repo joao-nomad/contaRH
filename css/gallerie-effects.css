@@ -1,0 +1,12 @@
+
+.gallerie-imagebox img {	
+	transition: all 500ms !important;
+	-webkit-transition: all 500ms !important;
+	-moz-transition: all 500ms !important;
+	-ms-transition: all 500ms !important;
+	-o-transition: all 500ms !important;
+}
+
+.gallerie-imagebox .loading {
+	opacity: 0.3 !important;
+}

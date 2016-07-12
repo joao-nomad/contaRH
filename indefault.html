@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pousada Cumbuco KiteSurf</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/gallerie.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gallerie-effects.css"/>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <button id="theMenu" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
+    <button id="theClose" class="btn btn-dark btn-lg toggle">X</button>
+    <div id="sideBar">
+        <p data-i18n="menu.title"></p><hr>
+        <ul>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); data-i18n="menu.home" id="homeLink"></a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); data-i18n="menu.about" id="aboutLink"></a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); data-i18n="menu.services" id="serviceLink"></a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); data-i18n="menu.gallery" id="galleryLink"></a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); data-i18n="menu.contact" id="contactLink"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="top" class="header bg1">
+        <div class="text-vertical-center">
+            <h1 class="branco mainP" data-i18n="introDiv.head"></h1>
+            <h3 class="branco" data-i18n="introDiv.desc"></h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg" data-i18n="introDiv.button"></a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 data-i18n="about.head"></h2>
+                    <p class="lead" data-i18n="about.text"></p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/7sYYKuRd6Jc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 data-i18n="services.head"></h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            
+                            <div class="service-item">
+                                <button id="wifi"></button>                             
+                            </span>
+                                <h4>
+                                    <strong data-i18n="services.s1title"></strong>
+                                </h4>
+                                <p data-i18n="services.s1desc"></p>
+                                <!--a href="#" class="btn btn-light">Learn More</a-->
+                            </div>                            
+
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <button id="parking"></button> 
+                            </span>
+                                <h4>
+                                    <strong data-i18n="services.s2title"></strong>
+                                </h4>
+                                <p data-i18n="services.s2desc"></p>
+                                <!--a href="#" class="btn btn-light">Learn More</a-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <button id="buggies"></button> 
+                            </span>
+                                <h4>
+                                    <strong data-i18n="services.s3title"></strong>
+                                </h4>
+                                <p data-i18n="services.s3desc"></p>
+                                <!--a href="#" class="btn btn-light">Learn More</a-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <button id="kitesurfing"></button> 
+                            </span>
+                                <h4>
+                                    <strong data-i18n="services.s4title"></strong>
+                                </h4>
+                                <p data-i18n="services.s4desc"></p>
+                                <!--a href="#" class="btn btn-light">Learn More</a-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout mainP">
+        <div class="text-vertical-center">
+            <h1 data-i18n="visit"></h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2 data-i18n="gallery.head"></h2>
+                    <hr class="small">                        
+                    <div id="gallery">
+						<a href="galleryPics/glr1.jpeg"><img src="galleryPics/thumbs/glr1t.jpg"/></a>
+                        <a href="galleryPics/glr2.jpeg"><img src="galleryPics/thumbs/glr2t.jpg"/></a>
+                        <a href="galleryPics/glr3.jpeg"><img src="galleryPics/thumbs/glr3t.jpg"/></a>
+                        <a href="galleryPics/glr4.jpeg"><img src="galleryPics/thumbs/glr4t.jpg"/></a>
+                        <a href="galleryPics/glr5.jpeg"><img src="galleryPics/thumbs/glr5t.jpg"/></a>
+                        <a href="galleryPics/glr6.jpeg"><img src="galleryPics/thumbs/glr6t.jpg"/></a>
+                        <a href="galleryPics/glr7.jpeg"><img src="galleryPics/thumbs/glr7t.jpg"/></a>
+                        <a href="galleryPics/glr8.jpeg"><img src="galleryPics/thumbs/glr8t.jpg"/></a>
+                        <a href="galleryPics/glr9.jpeg"><img src="galleryPics/thumbs/glr9t.jpg"/></a>
+                        <a href="galleryPics/glr10.jpeg"><img src="galleryPics/thumbs/glr10t.jpg"/></a>
+
+                        <a href="galleryPics/glr11.jpeg"><img src="galleryPics/thumbs/glr11t.jpg"/></a>
+                        <a href="galleryPics/glr12.jpeg"><img src="galleryPics/thumbs/glr12t.jpg"/></a>
+                        
+                        <a href="galleryPics/glr18.jpeg"><img src="galleryPics/thumbs/glr18t.jpg"/></a>
+                        <a href="galleryPics/glr19.jpeg"><img src="galleryPics/thumbs/glr19t.jpg"/></a>
+                        <a href="galleryPics/glr20.jpeg"><img src="galleryPics/thumbs/glr20t.jpg"/></a>
+
+                        <a href="galleryPics/glr21.jpeg"><img src="galleryPics/thumbs/glr21t.jpg"/></a>
+                        <a href="galleryPics/glr22.jpeg"><img src="galleryPics/thumbs/glr22t.jpg"/></a>
+                        <a href="galleryPics/glr23.jpeg"><img src="galleryPics/thumbs/glr23t.jpg"/></a>
+                        <a href="galleryPics/glr24.jpeg"><img src="galleryPics/thumbs/glr24t.jpg"/></a>
+                        <a href="galleryPics/glr25.jpeg"><img src="galleryPics/thumbs/glr25t.jpg"/></a>
+                        <a href="galleryPics/glr26.jpeg"><img src="galleryPics/thumbs/glr26t.jpg"/></a>
+                        <a href="galleryPics/glr27.jpeg"><img src="galleryPics/thumbs/glr27t.jpg"/></a>
+                        <a href="galleryPics/glr28.jpeg"><img src="galleryPics/thumbs/glr28t.jpg"/></a>
+                        <a href="galleryPics/glr29.jpeg"><img src="galleryPics/thumbs/glr29t.jpg"/></a>
+                        <a href="galleryPics/glr30.jpeg"><img src="galleryPics/thumbs/glr30t.jpg"/></a>
+                        <a href="galleryPics/glr31.jpg"><img src="galleryPics/thumbs/glr31t.jpg"/></a>
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action>
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Botões</h3>
+                    <a href="#" class="btn btn-lg btn-light">Clique aqui</a>
+                    <a href="#" class="btn btn-lg btn-dark">Clique aqui</a>
+                </div>
+            </div>
+        </div>
+    </aside-->
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.7998055364915!2d-38.717817920703126!3d-3.633128843845296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0cbf2d4a20115%3A0xd8085642eec294b4!2sAv.+dos+Coqueiros%2C+405+-+Cumbuco%2C+Caucaia+-+CE%2C+61619-012!5e0!3m2!1sen!2sbr!4v1460685495127"></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.7998055364915!2d-38.717817920703126!3d-3.633128843845296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0cbf2d4a20115%3A0xd8085642eec294b4!2sAv.+dos+Coqueiros%2C+405+-+Cumbuco%2C+Caucaia+-+CE%2C+61619-012!5e0!3m2!1sen!2sbr!4v1460685495127"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong data-i18n="footer.head"></strong></h4>
+                    <p data-i18n="footer.avenue"></p>
+                    <p>Caucaia - Cumbuco, Ceará</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i>+ 55 (85) 9971-7278 (Whats App)</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">pousadacumbucokitesurf@outlook.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <button id="facebook"><i class="fa fa-facebook fa-fw fa-3x"></i></button>
+                        </li>
+                    <hr clas 
+                    <p class="text-muted">Copyright &copy; Pousada Cumbuco KiteSurf - 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- i18next Script -->
+    <script src="js/i18next.min.js" ></script>
+    <script src="js/i18next-jquery.min.js" ></script>
+    <script src="js/translation.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        //e.preventDefault();
+        //$("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    
+    //Classes para transição das imagens
+    setInterval(function(){
+        var $header = $("header");
+
+        if ($header.hasClass("bg1") == true)
+        {
+            $header.removeClass("bg1");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg2");
+        }
+        else if ($header.hasClass("bg2") == true)
+        {
+            $header.removeClass("bg2");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg3");
+        }
+        else if ($header.hasClass("bg3") == true)
+        {
+            $header.removeClass("bg3");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg4");
+        }
+        else if ($header.hasClass("bg4") == true)
+        {
+            $header.removeClass("bg4");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg5");
+        }
+        else if ($header.hasClass("bg5") == true)
+        {
+            $header.removeClass("bg5");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg6");
+        }
+        else if ($header.hasClass("bg6") == true)
+        {
+            $header.removeClass("bg6");
+            $header.fadeOut("fast");
+            $header.fadeIn("fast");
+            $header.addClass("bg1");
+        }
+    }, 4000);
+    </script>
+    <script src="js/jquery.gallerie.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $('#gallery').gallerie();
+
+        $("#theClose, #homeLink, #aboutLink, #serviceLink, #galleryLink, #contactLink").click(function() {
+            $("#theMenu").animate({width:'toggle'}, -350);
+            $("#sideBar, #theClose").animate({width:'toggle'}, 350);
+        });
+
+        $("#theMenu").click(function() {
+            $("#sideBar, #theClose").animate({width:'toggle'}, -350);
+            $("#theMenu").animate({width:'toggle'}, 350);
+        });
+
+        $("#facebook").click(function() {
+            window.location.replace("https://www.facebook.com/marcelo.calderaro.319?fref=ts");
+        });
+
+        
+    });
+</script>
+</body>
+</html>
