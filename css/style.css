@@ -240,4 +240,7 @@ and (min-width: 664px)
 	.spacetop{
 		margin-top: 55px !important;
 	}
+	#theMenu{
+		display: none !important;
+	}
 }
