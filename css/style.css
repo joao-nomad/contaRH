@@ -1,0 +1,243 @@
+/* Produto Rural */
+.theNavBar{
+	background: #272727;
+    height: 55px;
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    color: white;
+    padding-top: 15px;
+    font-size: 16px;	
+    text-align: center;
+    margin-top: -55px;
+    display: none;
+}
+
+.theNavBar a{
+	color: white;
+	margin-top: 20px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.theNavBar a:hover{
+	color: gold;
+	text-decoration:none;
+}
+
+.theNavBar ul{
+	background: #272727;
+    margin-left: 150px;
+}
+
+.dropA{
+	color: white !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+.dropA:hover{
+	background-color: #272727 !important;
+	color: gold !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+.spacetop{
+	margin-top: 0px;
+}
+
+.btnPresentation{
+	opacity: 0.6 !important;
+	background-color: black;
+	color: white !important;
+}
+/* Fim do Produtor Rural */
+
+
+.branco
+{
+	color: white !important;
+}
+
+.mainP{
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+#ptEnt
+{
+	width: 100px;
+	height: 35px;
+	background: url(../img/ptFlag.png) no-repeat;
+	background-color: black;
+	background-position: 8px 1px;
+	background-size: 80px 30px;
+	opacity: 0.5;
+}
+
+#enEnt
+{
+	width: 100px;
+	height: 35px;
+	background: url(../img/enFlag.png) no-repeat;
+	background-color: black;
+	background-position: 8px 1px;
+	background-size: 80px 30px;
+	opacity: 0.5;
+}
+
+#esEnt
+{
+	width: 100px;
+	height: 35px;
+	background: url(../img/esFlag.png) no-repeat;
+	background-color: black;
+	background-position: 8px 1px;
+	background-size: 80px 30px;
+	opacity: 0.5;
+}
+
+#ptEnt:hover, #enEnt:hover, #esEnt:hover{
+	opacity: 0.9;
+}
+
+#wifi
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/wifi.png) no-repeat;
+}
+
+#parking
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/parking.png) no-repeat;
+}
+
+#buggies
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/buggies.png) no-repeat;
+}
+
+#kitesurfing
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/kitesurfing.png) no-repeat;
+}
+
+#gallery 
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#theMenu{
+	position: fixed;
+    z-index: 200;
+    margin-top: 0px;
+    right: -5px;
+    display: block;
+}
+
+#theClose{
+	position: fixed;
+    z-index: 205;
+    margin-top: 0px;
+    right: -5px;
+    font-size: 20px;
+    font-family: 'Arial Black';
+    display: none;
+}
+#theClose:hover{
+	position: fixed;
+    z-index: 205;
+    margin-top: 0px;
+    right: -5px;
+    background-color: #337ab7;
+}
+
+#sideBar{
+	background-color: black;
+	opacity: 0.8;
+    display: block;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 203;
+    margin-top: 0px;
+    right: -1px;
+    padding-top: 20px;
+    display: none;
+}
+
+#sideBar p, #sideBar a{
+	color: #d7d7d7;
+	font-size: 17px;
+}
+
+#sideBar li{
+	list-style-type: none;
+	height: 35px;
+	padding-top: 5px;
+	margin-left: -40px;
+	padding-left: 40px;
+}
+
+#sideBar li:hover{
+	background-color: #337ab7;
+}
+
+#sideBar a:hover, #sideBar a:active{
+	text-decoration: none;
+	color: white;
+}
+
+#sideBar p{margin-left: 40px; font-size: 20px !important; color: white !important;}
+
+#facebook{
+	height: 100px;
+	width: 150px;
+	background: transparent;
+	background-image:url(../img/facebookpage.png);
+   	background-size:contain;
+   	background-repeat:no-repeat;
+	border: 0px;
+}
+
+
+/*MENU MEDIA-QUERY*/
+@media only screen
+and (min-width: 664px)
+{
+	.theNavBar{
+		display: block !important;
+	}
+	.spacetop{
+		margin-top: 55px !important;
+	}
+}
