@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/load.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,269 +33,276 @@
 </head>
 
 <body>
-    <button id="theMenu" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
-    <button id="theClose" class="btn btn-dark btn-lg toggle">X</button>
-    <div id="sideBar">
-        <p>Menu</p><hr>
-        <ul>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click();>Início</a>
-            </li>
-            <li>
-                <a href="#sobrenos" onclick = $("#menu-close").click();>Sobre Nós</a>
-            </li>
-            <li>
-                <a href="#prural" onclick = $("#menu-close").click();>Serviços</a>
-            </li>
-            <li>
-                <a onclick = $("#menu-close").click();>Orçamentos</a>
-            </li>
-            <li>
-                <a href="#galeria" onclick = $("#menu-close").click();>Galeria</a>
-            </li>
-            <li>
-                <a onclick = $("#menu-close").click();>Perguntas Frequentes</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click();>Contato</a>
-            </li>
-        </ul>
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
     </div>
 
-    <div class="dropdown theNavBar">        
-        <a href="#top">Início</a>
-        <a href="#sobrenos">Sobre Nós</a>
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Serviços
-            <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a class="dropA" href="#">Contabilida em Geral</a></li>
-            <li><a class="dropA" href="#prural">Produtor Rural</a></li>
-        </ul>
-        <a>Orçamentos</a>
-        <a href="#galeria">Galeria</a>
-        <a>Perguntas Frequentes</a>
-        <a href="#contact">Contato</a>
+    <div id="container">
+        <button id="theMenu" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
+        <button id="theClose" class="btn btn-dark btn-lg toggle">X</button>
+        <div id="sideBar">
+            <p>Menu</p><hr>
+            <ul>
+                <li>
+                    <a href="#top" onclick = $("#menu-close").click();>Início</a>
+                </li>
+                <li>
+                    <a href="#sobrenos" onclick = $("#menu-close").click();>Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#prural" onclick = $("#menu-close").click();>Serviços</a>
+                </li>
+                <li>
+                    <a onclick = $("#menu-close").click();>Orçamentos</a>
+                </li>
+                <li>
+                    <a href="#galeria" onclick = $("#menu-close").click();>Galeria</a>
+                </li>
+                <li>
+                    <a onclick = $("#menu-close").click();>Perguntas Frequentes</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick = $("#menu-close").click();>Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown theNavBar">        
+            <a href="#top">Início</a>
+            <a href="#sobrenos">Sobre Nós</a>
+            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Serviços
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a class="dropA" href="#">Contabilida em Geral</a></li>
+                <li><a class="dropA" href="#prural">Produtor Rural</a></li>
+            </ul>
+            <a>Orçamentos</a>
+            <a href="#galeria">Galeria</a>
+            <a>Perguntas Frequentes</a>
+            <a href="#contact">Contato</a>
+        </div>
+
+        <!-- Header -->
+        <section id="top" class="header bg1 spacetop">
+            <div class="text-vertical-center">
+                <img class="img-responsive" src="img/logoBranco.png" id="logoImg">
+                <!--h3 class="branco">Bem-Vindo, Produtor Rural</h3-->
+                <br>
+                <a href="#sobrenos" class="btn btn-dark btn-lg btnPresentation">Bem-Vindo, Produtor Rural</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="sobrenos" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>SOBRE NÓS</h2>
+                        <hr class="small">
+                        <p class="lead aboutTitle">Contabilidade para Empresas</p>
+                        <p class="lead aboutContainer">A Contarh atua no ramo de contabilidade empresarial. Nossos profissionais capacitados estão no mercado de trabalho há mais de 10 anos. Prestamos nossos serviços  para empresas de Pequeno, Médio e Grande Porte (MEI, ME, EPP, LTDA. Nosso propósito é  contribuir para que sua empresa recolha seus tributos de maneira correta e menos onerosa possível. Fazemos análises anuais para de acordo com cada atividade empresarial para que possamos enquadra-lo na modalidade mais benéfica para seu negócio (Simples Nacional, Lucro Presumido e Lucro Real).</p>
+
+                        <p class="lead aboutTitle">Produtor Rural</p>
+                        <p class="lead aboutContainer">Localizados no Vale do Paraiba, região que conta vo grande número de produtores rurais e pecuaristas, dedicamos profissionais quantificados para esse ramo da Contabilidade. Nossa prestação de serviços vai desde a abertura da inscrição do produtor rural, folha de pagamento de empregados, solicitação é emissão dos talonarios das notas fiscais, recolhimento dos tributos devidos e prestação de contas ao fisco.<br>
+                        Produtor, procure a CONTARH!</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Services -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <section id="prural" class="services bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Nossos Serviços</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div>                            
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div>                            
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <button id="wifi"></button>                             
+                                </span>
+                                    <h4>
+                                        <strong>Título do Serviço</strong>
+                                    </h4>
+                                    <p>Descrição do Serviço</p>
+                                    <!--a href="#" class="btn btn-light">Learn More</a-->
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Callout -->
+        <!--aside class="callout mainP">
+            <div class="text-vertical-center">
+                <h1 data-i18n="visit"></h1>
+            </div>
+        </aside-->
+
+        <!-- Portfolio -->
+        <section id="galeria" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Galeria de Fotos (Exemplo)</h2>
+                        <hr class="small">                        
+                        <div id="gallery">
+                            <a href="galleryPics/glr1.jpeg"><img src="galleryPics/thumbs/glr1t.jpg"/></a>
+                            <a href="galleryPics/glr2.jpeg"><img src="galleryPics/thumbs/glr2t.jpg"/></a>
+                            <a href="galleryPics/glr3.jpeg"><img src="galleryPics/thumbs/glr3t.jpg"/></a>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action>
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Botões</h3>
+                        <a href="#" class="btn btn-lg btn-light">Clique aqui</a>
+                        <a href="#" class="btn btn-lg btn-dark">Clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </aside-->
+
+        <!-- Map -->
+        <section id="contact" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.8948070894867!2d-45.66408068545586!3d-23.392022461244714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cda6b406bd2143%3A0x2ed8443d9c4fb84c!2sR.+Padre+Am%C3%A9rico%2C+148%2C+Paraibuna+-+SP%2C+12260-000!5e0!3m2!1sen!2sbr!4v1469246230581" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4><strong data-i18n="footer.head"></strong></h4>
+                        <p data-i18n="footer.avenue"></p>
+                        <p>Paraibuna - São Paulo, SP</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i>+ 55 (12) 3974-3567</li>
+                            <li><i class="fa fa-phone fa-fw"></i>+ 55 (12) 99741-2560</li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:contato.contarh@hotmail.com">contato.contarh@hotmail.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <button id="facebook"></button>
+                            </li>
+                        <hr clas 
+                        <p class="text-muted">Copyright &copy; ContaRH Escritório de Contabilidade - 2016</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <!-- Header -->
-    <section id="top" class="header bg1 spacetop">
-        <div class="text-vertical-center">
-            <img class="img-responsive" src="img/logoBranco.png" id="logoImg">
-            <!--h3 class="branco">Bem-Vindo, Produtor Rural</h3-->
-            <br>
-            <a href="#sobrenos" class="btn btn-dark btn-lg btnPresentation">Bem-Vindo, Produtor Rural</a>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="sobrenos" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>SOBRE NÓS</h2>
-                    <hr class="small">
-                    <p class="lead aboutTitle">Contabilidade para Empresas</p>
-                    <p class="lead aboutContainer">A Contarh atua no ramo de contabilidade empresarial. Nossos profissionais capacitados estão no mercado de trabalho há mais de 10 anos. Prestamos nossos serviços  para empresas de Pequeno, Médio e Grande Porte (MEI, ME, EPP, LTDA. Nosso propósito é  contribuir para que sua empresa recolha seus tributos de maneira correta e menos onerosa possível. Fazemos análises anuais para de acordo com cada atividade empresarial para que possamos enquadra-lo na modalidade mais benéfica para seu negócio (Simples Nacional, Lucro Presumido e Lucro Real).</p>
-
-                    <p class="lead aboutTitle">Produtor Rural</p>
-                    <p class="lead aboutContainer">Localizados no Vale do Paraiba, região que conta vo grande número de produtores rurais e pecuaristas, dedicamos profissionais quantificados para esse ramo da Contabilidade. Nossa prestação de serviços vai desde a abertura da inscrição do produtor rural, folha de pagamento de empregados, solicitação é emissão dos talonarios das notas fiscais, recolhimento dos tributos devidos e prestação de contas ao fisco.<br>
-                    Produtor, procure a CONTARH!</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="prural" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Nossos Serviços</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div>                            
-
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div>                            
-
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <button id="wifi"></button>                             
-                            </span>
-                                <h4>
-                                    <strong>Título do Serviço</strong>
-                                </h4>
-                                <p>Descrição do Serviço</p>
-                                <!--a href="#" class="btn btn-light">Learn More</a-->
-                            </div> 
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <!--aside class="callout mainP">
-        <div class="text-vertical-center">
-            <h1 data-i18n="visit"></h1>
-        </div>
-    </aside-->
-
-    <!-- Portfolio -->
-    <section id="galeria" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Galeria de Fotos (Exemplo)</h2>
-                    <hr class="small">                        
-                    <div id="gallery">
-                        <a href="galleryPics/glr1.jpeg"><img src="galleryPics/thumbs/glr1t.jpg"/></a>
-                        <a href="galleryPics/glr2.jpeg"><img src="galleryPics/thumbs/glr2t.jpg"/></a>
-                        <a href="galleryPics/glr3.jpeg"><img src="galleryPics/thumbs/glr3t.jpg"/></a>
-                    </div>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action>
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Botões</h3>
-                    <a href="#" class="btn btn-lg btn-light">Clique aqui</a>
-                    <a href="#" class="btn btn-lg btn-dark">Clique aqui</a>
-                </div>
-            </div>
-        </div>
-    </aside-->
-
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.8948070894867!2d-45.66408068545586!3d-23.392022461244714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cda6b406bd2143%3A0x2ed8443d9c4fb84c!2sR.+Padre+Am%C3%A9rico%2C+148%2C+Paraibuna+-+SP%2C+12260-000!5e0!3m2!1sen!2sbr!4v1469246230581" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong data-i18n="footer.head"></strong></h4>
-                    <p data-i18n="footer.avenue"></p>
-                    <p>Paraibuna - São Paulo, SP</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i>+ 55 (12) 3974-3567</li>
-                        <li><i class="fa fa-phone fa-fw"></i>+ 55 (12) 99741-2560</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:contato.contarh@hotmail.com">contato.contarh@hotmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <button id="facebook"></button>
-                        </li>
-                    <hr clas 
-                    <p class="text-muted">Copyright &copy; ContaRH Escritório de Contabilidade - 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/load.js"></script>
 </body>
 </html>
