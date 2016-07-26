@@ -70,3 +70,7 @@ setInterval(function(){
         $header.addClass("bg1");
     }
 }, 4000);
+
+$("#inBtn, #sbBtn, #scBtn, #cgBtn, #prBtn, #orBtn, #glBtn, #pfBtn, #ctBtn").click(function() {
+    //alert('vai');
+});  
