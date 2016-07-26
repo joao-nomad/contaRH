@@ -1,3 +1,10 @@
+#galleria {
+	position: relative;
+	top: 10px;
+	overflow: hidden;
+	height: 450px;
+}
+
 #logoImg{
 	width: 400px;
 	display: block;

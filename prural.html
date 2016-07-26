@@ -239,12 +239,14 @@
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
                         <h2>Galeria de Fotos (Exemplo)</h2>
-                        <hr class="small">                        
-                        <div id="gallery">
-                            <a href="galleryPics/glr1.jpeg"><img src="galleryPics/thumbs/glr1t.jpg"/></a>
-                            <a href="galleryPics/glr2.jpeg"><img src="galleryPics/thumbs/glr2t.jpg"/></a>
-                            <a href="galleryPics/glr3.jpeg"><img src="galleryPics/thumbs/glr3t.jpg"/></a>
+                        <hr class="small"> 
+
+                        <div id="galleria">
+                            <img src="galleryPics/bg1.png"/></a>
+                            <img src="galleryPics/bg2.png"/></a>
+                            <img src="galleryPics/bg3.png"/></a>
                         </div>
+
                     </div>
                     <!-- /.col-lg-10 -->
                 </div>
@@ -304,5 +306,22 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/load.js"></script>
+    <script src="js/galleria/galleria-1.4.2.js"></script>
+    <script>
+            Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.js');
+            Galleria.configure({
+                transition: 'fade',
+                imageCrop: true,
+                responsive: true,
+                lightbox: false,/* Quando clica em cima da foto */
+                clicknext: false, /* Passar para o próximo */
+                dummy: '/images/noimage.jpg', /* Caso não há imagem encontrada */
+                fullscreenDoubleTap: true,
+                fullscreenCrop: true,
+                imagePan: true,
+                layerFollow: true
+            });
+            Galleria.run('#galleria');
+    </script>
 </body>
 </html>
