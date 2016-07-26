@@ -1,3 +1,10 @@
+#logoImg{
+	width: 400px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Produto Rural */
 .theNavBar{
 	background: #272727;
