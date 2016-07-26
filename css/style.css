@@ -66,6 +66,10 @@
 	margin-top: 0px;
 }
 
+.header{
+	height: 650px !important;
+}
+
 .btnPresentation{
 	opacity: 0.6 !important;
 	background-color: black;
