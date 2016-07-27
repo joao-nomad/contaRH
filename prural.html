@@ -265,7 +265,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <h2>Galeria de Fotos (Exemplo)</h2>
+                        <h2>Galeria de Fotos</h2>
                         <hr class="small"> 
 
                         <div id="galleria">
@@ -323,21 +323,6 @@
     <script src="js/load.js"></script>
     <script src="js/formspree.js"></script>    
     <script src="js/galleria/galleria-1.4.2.js"></script>
-    <script>
-            Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.js');
-            Galleria.configure({
-                transition: 'fade',
-                imageCrop: true,
-                responsive: true,
-                lightbox: false,/* Quando clica em cima da foto */
-                clicknext: false, /* Passar para o próximo */
-                dummy: '/images/noimage.jpg', /* Caso não há imagem encontrada */
-                fullscreenDoubleTap: true,
-                fullscreenCrop: true,
-                imagePan: true,
-                layerFollow: true
-            });
-            Galleria.run('#galleria');
-    </script>
+    <script src="js/galleriaCaller.js"></script>
 </body>
 </html>
