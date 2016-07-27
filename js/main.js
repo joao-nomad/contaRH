@@ -71,6 +71,21 @@ setInterval(function(){
     }
 }, 4000);
 
+$('#telefone').mask("(99) 9999-9999");
+
+$('#celular').focusout(function(){
+    var phone, element;
+    element = $(this);
+    element.unmask();
+    phone = element.val().replace(/\D/g, '');
+    if(phone.length > 10) {
+        element.mask("(99) 99999-999?9");
+    } else {
+        element.mask("(99) 9999-9999?9");
+    }
+}).trigger('focusout');
+
 $("#inBtn, #sbBtn, #scBtn, #cgBtn, #prBtn, #orBtn, #glBtn, #pfBtn, #ctBtn").click(function() {
     //alert('vai');
 });  
+

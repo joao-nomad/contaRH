@@ -226,15 +226,42 @@
             <!-- /.container -->
         </section>
 
-        <!-- Callout -->
-        <!--aside class="callout mainP">
-            <div class="text-vertical-center">
-                <h1 data-i18n="visit"></h1>
-            </div>
-        </aside-->
+        <section id="orcamento" class="portfolio">
+            <div class="container">
+                <div class="row">
 
-        <!-- Portfolio -->
-        <section id="galeria" class="portfolio">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Orçamentos</h2>
+                        <hr class="small"> 
+
+                       <form id="contact-form"  method="POST">
+                            <!--input type="hidden" name="_next" value="http://www.raymondcamden.com/thankyou"-->
+                            <input type="text" name="Nome" placeholder="Nome" required><br>
+                            <input type="email" name="E-mail" placeholder="E-mail" required><br>
+                            <input id="telefone" type="text" name="Telefone" placeholder="Telefone Fixo" required><br>
+                            <input id="celular" type="text" name="Celular" placeholder="Celular" required><br>
+            
+        
+                            <!-- RadioButton -->
+                            <div class="radio">
+                                <label class="radio-inline"><input type="radio" name="TipoServico" value="Empresarial">Serviço Empresarial</label>
+                                <label class="radio-inline"><input type="radio" name="TipoServico" value="Rural">Serviço Rural</label>
+                            </div>
+
+                            <textarea name="Message" cols="30" rows="6" placeholder="Message" required></textarea><br>
+
+                            <input class="submit" type="submit" value="Fazer orçamento">
+                        </form>
+
+                    </div>                    
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <section id="galeria" class="portfolio bg-primary">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -254,19 +281,6 @@
             </div>
             <!-- /.container -->
         </section>
-
-        <!-- Call to Action>
-        <aside class="call-to-action bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>Botões</h3>
-                        <a href="#" class="btn btn-lg btn-light">Clique aqui</a>
-                        <a href="#" class="btn btn-lg btn-dark">Clique aqui</a>
-                    </div>
-                </div>
-            </div>
-        </aside-->
 
         <!-- Map -->
         <section id="contact" class="map">
@@ -303,7 +317,8 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/maskedInput.js"></script>
     <script src="js/main.js"></script>
     <script src="js/load.js"></script>
     <script src="js/galleria/galleria-1.4.2.js"></script>
