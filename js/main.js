@@ -4,21 +4,25 @@ $("#menu-close").click(function(e) {
     //$("#sidebar-wrapper").toggleClass("active");
 });
 
+
 // Opens the sidebar menu
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
 });
 
+
 $("#theMenu").click(function() {
     $("#sideBar, #theClose").animate({width:'toggle'}, -350);
     $("#theMenu").animate({width:'toggle'}, 350);
 });
 
+
 $("#theClose, #homeLink, #aboutLink, #serviceLink, #galleryLink, #contactLink").click(function() {
     $("#theMenu").animate({width:'toggle'}, -350);
     $("#sideBar, #theClose").animate({width:'toggle'}, 350);
 });
+
 
 $("#facebook").click(function() {
     window.open(
@@ -27,23 +31,8 @@ $("#facebook").click(function() {
     );
 });  
 
-// Scrolls to the selected menu item on the page
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-    
+
 //Classes para transição das imagens
 setInterval(function(){
     var $header = $("#top");
@@ -71,6 +60,7 @@ setInterval(function(){
     }
 }, 4000);
 
+
 $('#telefone').mask("(99) 9999-9999");
 
 $('#celular').focusout(function(){
@@ -85,7 +75,29 @@ $('#celular').focusout(function(){
     }
 }).trigger('focusout');
 
+
 $("#inBtn, #sbBtn, #scBtn, #cgBtn, #prBtn, #orBtn, #glBtn, #pfBtn, #ctBtn").click(function() {
     //alert('vai');
-});  
+}); 
+
+/*
+
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+*/
 
