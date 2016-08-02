@@ -1,0 +1,494 @@
+
+    h2.acc_title_bar {
+  padding: 0;
+  margin: 0 0 2px 0;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+  -webkit-border-radius: 0px 0px 0 10px;
+  -moz-border-radius: 0px 0px 0 10px;
+  border-radius: 0px 0px 0 10px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-transition: font-size 0.5s 0.1s ease-in;
+  -moz-transition: font-size 0.5s 0.1s ease-in;
+  -o-transition: font-size 0.5s 0.1s ease-in;
+  transition: font-size 0.5s 0.1s ease-in;
+}
+h2.acc_title_bar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0 0 0 56px;
+  position: relative;
+}
+h2.acc_title_bar a:after {
+  z-index: 1;
+  left: 20px;
+  top: 0;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+  -webkit-transition: 0.5s 0.2s ease-out;
+  -moz-transition: 0.5s 0.2s ease-out;
+  -o-transition: 0.5s 0.2s ease-out;
+  transition: 0.5s 0.2s ease-out;
+}
+h2.acc_title_bar a:before {
+  z-index: 2;
+  content: "\f067";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  overflow: hidden;
+  -webkit-border-radius: 0px 4px 0 4px;
+  -moz-border-radius: 0px 4px 0 4px;
+  border-radius: 0px 4px 0 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+h2.acc_title_bar a:hover {
+  color: #f0f0f0;
+}
+h2.acc_title_bar a:hover:before {
+  content: "\f067";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+h2.title-bar-active {
+  background: transparent;
+}
+h2.title-bar-active a {
+  color: #f0f0f0;
+}
+h2.title-bar-active a:after {
+  z-index: 1;
+  left: 20px;
+  top: 0;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(10deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+}
+h2.title-bar-active a:before {
+  /*content: "\f068";*/
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+h2.title-bar-active a:hover {
+  color: #f0f0f0;
+}
+h2.title-bar-active a:hover:before {
+  /*content: "\f068";*/
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  line-height: 46px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/***********************************************************************************************/
+/* 3.1 Default theme */
+/***********************************************************************************************/
+h2.default-title-bar {
+  background: #2c2c2c;
+}
+h2.default-title-bar a {
+  color: #ffffff;
+}
+h2.default-title-bar a:after {
+  background: #b3b330;
+}
+h2.default-title-bar a:before {
+  background: #b3b330;
+}
+h2.default-title-bar a:hover {
+  color: #f0f0f0;
+}
+h2.default-title-bar a:hover:before {
+  background: #b3b330;
+}
+h2.default-title-bar-active {
+  background: #121212;
+}
+h2.default-title-bar-active a {
+  color: #f0f0f0;
+}
+h2.default-title-bar-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #cfcf4d;
+}
+h2.default-title-bar-active a:before {
+  content: "\f068";
+  background: #cfcf4d;
+}
+h2.default-title-bar-active a:hover {
+  color: #f0f0f0;
+}
+h2.default-title-bar-active a:hover:before {
+  content: "\f068";
+  background: #cfcf4d;
+}
+h2.theme-red-title-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #710e0d;
+}
+h2.theme-red-title-active a:before {
+  content: "\f068";
+  background: #710e0d;
+}
+h2.theme-red-title-active a:hover {
+  color: #f0f0f0;
+}
+h2.theme-red-title-active a:hover:before {
+  content: "\f068";
+  background: #710e0d;
+}
+/***********************************************************************************************/
+/* 3.3 Blue theme  */
+/***********************************************************************************************/
+h2.theme-blue-title-bar {
+  background: #2d9fd0;
+}
+h2.theme-blue-title-bar a {
+  color: #ffffff;
+}
+h2.theme-blue-title-bar a:after {
+  background: #091f28;
+}
+h2.theme-blue-title-bar a:before {
+  background: #091f28;
+}
+h2.theme-blue-title-bar a:hover {
+  color: #f0f0f0;
+}
+h2.theme-blue-title-bar a:hover:before {
+  background: #091f28;
+}
+h2.theme-blue-title-active {
+  background: #247fa6;
+}
+h2.theme-blue-title-active a {
+  color: #f0f0f0;
+}
+h2.theme-blue-title-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #164f67;
+}
+h2.theme-blue-title-active a:before {
+  content: "\f068";
+  background: #164f67;
+}
+h2.theme-blue-title-active a:hover {
+  color: #f0f0f0;
+}
+h2.theme-blue-title-active a:hover:before {
+  content: "\f068";
+  background: #164f67;
+}
+/***********************************************************************************************/
+/* 3.4 Green theme  */
+/***********************************************************************************************/
+h2.theme-green-title-bar {
+  background: #3f9f39;
+}
+h2.theme-green-title-bar a {
+  color: #ffffff;
+}
+h2.theme-green-title-bar a:after {
+  background: #122e11;
+}
+h2.theme-green-title-bar a:before {
+  background: #122e11;
+}
+h2.theme-green-title-bar a:hover {
+  color: #f0f0f0;
+}
+h2.theme-green-title-bar a:hover:before {
+  background: #122e11;
+}
+h2.theme-green-title-active {
+  background: #388c32;
+}
+h2.theme-green-title-active a {
+  color: #f0f0f0;
+}
+h2.theme-green-title-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #1a4117;
+}
+h2.theme-green-title-active a:before {
+  content: "\f068";
+  background: #1a4117;
+}
+h2.theme-green-title-active a:hover {
+  color: #f0f0f0;
+}
+h2.theme-green-title-active a:hover:before {
+  content: "\f068";
+  background: #1a4117;
+}
+/***********************************************************************************************/
+/* 3.5 Orange theme  */
+/***********************************************************************************************/
+h2.theme-orange-title-bar {
+  background: #ff9900;
+}
+h2.theme-orange-title-bar a {
+  color: #ffffff;
+}
+h2.theme-orange-title-bar a:after {
+  background: #cc7a00;
+}
+h2.theme-orange-title-bar a:before {
+  background: #cc7a00;
+}
+h2.theme-orange-title-bar a:hover {
+  color: #f0f0f0;
+}
+h2.theme-orange-title-bar a:hover:before {
+  background: #cc7a00;
+}
+h2.theme-orange-title-active {
+  background: #e68a00;
+}
+h2.theme-orange-title-active a {
+  color: #f0f0f0;
+}
+h2.theme-orange-title-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #804d00;
+}
+h2.theme-orange-title-active a:before {
+  content: "\f068";
+  background: #804d00;
+}
+h2.theme-orange-title-active a:hover {
+  color: #f0f0f0;
+}
+h2.theme-orange-title-active a:hover:before {
+  content: "\f068";
+  background: #804d00;
+}
+/***********************************************************************************************/
+/* 3.6 Yellow theme  */
+/***********************************************************************************************/
+h2.theme-yellow-title-bar {
+  background: #ffe140;
+}
+h2.theme-yellow-title-bar a {
+  color: #2C2C2C;
+}
+h2.theme-yellow-title-bar a:after {
+  background: #d9b700;
+}
+h2.theme-yellow-title-bar a:before {
+  background: #d9b700;
+}
+h2.theme-yellow-title-bar a:hover {
+  color: #2C2C2C;
+}
+h2.theme-yellow-title-bar a:hover:before {
+  background: #d9b700;
+}
+h2.theme-yellow-title-active {
+  background: #f3cc00;
+}
+h2.theme-yellow-title-active a:after {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #c0a100;
+}
+h2.theme-yellow-title-active a:before {
+  content: "\f068";
+  background: #c0a100;
+}
+h2.theme-yellow-title-active a:hover:before {
+  content: "\f068";
+  background: #c0a100;
+}
+/***********************************************************************************************/
+/* 3.7 Custom theme  */
+/***********************************************************************************************/
+h2.theme-custom-title-bar {
+  background: #2c2c2c;
+}
+h2.theme-custom-title-active a:before {
+  content: "\f068";
+}
+h2.theme-custom-title-active a:hover:before {
+  content: "\f068";
+}
+/***********************************************************************************************/
+/* 04. Accordion content */
+/***********************************************************************************************/
+div.acc_container {
+  margin: 0 0 2px 0;
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  background: #fbfbfb;
+  border: 1px solid #d6d6d6;
+  display: none;
+}
+div.acc_container .block {
+  padding: 0 12px;
+}
+/***********************************************************************************************/
+/* 05. Pagination styling */
+/***********************************************************************************************/
+.bsa_pagination_nav_block {
+  display: block;
+  clear: both;
+}
+#bsa_page_navigation {
+  text-align: right;
+}
+#bsa_page_navigation a {
+  padding: 1px 5px;
+  border: 1px solid #cccccc;
+  margin: 2px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+}
+#bsa_page_navigation a.active_page {
+  color: white;
+}
+#bsa_page_navigation span.total_pages {
+  display: inline-block;
+  margin: 5px 0 0 0 ;
+  font-size: small;
+}
+#bsa_page_navigation a.previous_link,
+#bsa_page_navigation a.next_link {
+  padding: 1px 8px;
+  font-weight: normal;
+}
+.default_theme_nav a.active_page {
+  background: #b3b330;
+}
+.red_theme_nav a.active_page {
+  background: #e31d1a;
+}
+.green_theme_nav a.active_page {
+  background: #3f9f39;
+}
+.blue_theme_nav a.active_page {
+  background: #2d9fd0;
+}
+.orange_theme_nav a.active_page {
+  background: #ff9900;
+}
+.yellow_theme_nav a.active_page {
+  background: #ffe140;
+}
+.bsa_dn {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h2.acc_title_bar {
+    min-height: 46px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  h2.acc_title_bar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 2px 0 52px;
+    position: relative;
+    height: 100%;
+  }
+  h2.nav_circle a::after,
+  h2.nav_arrow a::after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  h2.acc_title_bar {
+    min-height: 46px;
+    line-height: 24px;
+    font-size: 13px;
+  }
+  h2.acc_title_bar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 2px 0 52px;
+    position: relative;
+    height: 100%;
+    line-height: 14px;
+  }
