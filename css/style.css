@@ -5,6 +5,10 @@
 	height: 450px;
 }
 
+.accord{
+	margin-top: -2px !important;
+}
+
 #logoImg{
 	width: 400px;
 	display: block;
