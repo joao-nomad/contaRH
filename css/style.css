@@ -9,6 +9,36 @@ input[type="text"], input[type="email"]  {
     padding-left: 20px;
 }
 
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus  {
+    background: white;
+    color: #337ab7;
+    border: 1px solid #337ab7;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+	color: white;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {
+	color:#337ab7;
+}
+
+input[type="email"]:focus::-webkit-input-placeholder {
+	color:#337ab7;
+}
+
+textarea:focus::-webkit-input-placeholder {
+	color:#337ab7;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: white;
+}
+
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+
 textarea{
 	width: 70%;
 	height: 150px;
