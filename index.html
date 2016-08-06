@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pousada Cumbuco KiteSurf</title>
+    <title>Produtor Rural - contarRH</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav-style.css" rel="stylesheet">
+    <link href="css/load.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,84 +33,30 @@
     <![endif]-->
 
 </head>
-    <body>
+
+<body id="mainPage">
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+
         <!-- Header -->
-        <header id="top" class="header bg1">
+        <section id="top" class="header bg1 spacetop">
             <div class="text-vertical-center">
-                <h1 class="branco mainP">Pousada Cumbuco KiteSurf</h1>
+                <img class="img-responsive" src="img/logoBranco.png" id="logoImg">
+                <!--h3 class="branco">Bem-Vindo, Produtor Rural</h3-->
                 <br>
-                <a href="#about" class="btn btn-dark btn-lg" id="ptEnt"></a>
-                <a href="#about" class="btn btn-dark btn-lg" id="enEnt"></a>
-                <a href="#about" class="btn btn-dark btn-lg" id="esEnt"></a>
+                <a id="empresasBt" href="empresas.html" class="btn btn-dark btn-lg btnPresentation">Para Empresas</a>
+                <a id="ruralBt" href="prural.html" class="btn btn-dark btn-lg btnPresentation">Para Produtor Rural</a>
             </div>
-        </header>
+        </section>
+    </div>
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-        $("#ptEnt").click(function() {
-            window.location.href='indefault.html?lan=pt';
-        });
-
-        $("#enEnt").click(function() {
-            window.location.href='indefault.html?lan=en';
-        });
-
-        $("#esEnt").click(function() {
-            window.location.href='indefault.html?lan=es';
-        });
-
-
-        //Classes para transição das imagens
-    setInterval(function(){
-        var $header = $("header");
-
-        if ($header.hasClass("bg1") == true)
-        {
-            $header.removeClass("bg1");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg2");
-        }
-        else if ($header.hasClass("bg2") == true)
-        {
-            $header.removeClass("bg2");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg3");
-        }
-        else if ($header.hasClass("bg3") == true)
-        {
-            $header.removeClass("bg3");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg4");
-        }
-        else if ($header.hasClass("bg4") == true)
-        {
-            $header.removeClass("bg4");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg5");
-        }
-        else if ($header.hasClass("bg5") == true)
-        {
-            $header.removeClass("bg5");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg6");
-        }
-        else if ($header.hasClass("bg6") == true)
-        {
-            $header.removeClass("bg6");
-            $header.fadeOut("fast");
-            $header.fadeIn("fast");
-            $header.addClass("bg1");
-        }
-    }, 4000);
-        </script>
-    </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/main.js"></script>
+    <script src="js/load.js"></script>
+</body>
 </html>
