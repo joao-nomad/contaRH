@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav-style.css" rel="stylesheet">
     <link href="css/load.css" rel="stylesheet">
     <link href="css/accordion.css" rel="stylesheet">
 
@@ -39,51 +40,36 @@
         <div id="progress"></div>
     </div>
 
-    <div id="container">
-        <button id="theMenu" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
-        <button id="theClose" class="btn btn-dark btn-lg toggle">X</button>
-        <div id="sideBar" class="linkis">
-            <p>Menu</p><hr>
-            <ul>
-                <li>
-                    <a href="#top" onclick = $("#menu-close").click();>Início</a>
+    <header class="navHeader">
+        <nav id='cssmenu' class="linkis">
+        <div class="logo"><a href="index.html">Responsive </a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='#top'>Início</a></li>
+            <li><a href='#sobrenos'>Sobre Nós</a></li>
+            <li><a href='#'>Serviços</a>
+            <ul class="teste1">
+                <li class="teste2"><a href='#'>Para Empresas</a>
                 </li>
-                <li>
-                    <a href="#sobrenos" onclick = $("#menu-close").click();>Sobre Nós</a>
+                <li><a href='#'>Para Produtor Rural</a>
                 </li>
-                <li>
-                    <a href="#prural" onclick = $("#menu-close").click();>Serviços</a>
-                </li>
-                <li>
-                    <a href="#orcamento" onclick = $("#menu-close").click();>Orçamentos</a>
-                </li>
-                <li>
-                    <a href="#galeria" onclick = $("#menu-close").click();>Galeria</a>
-                </li>
-                <li>
-                    <a href="#faq" onclick = $("#menu-close").click();>Perguntas Frequentes</a>
-                </li>
-                <li>
-                    <a href="#contact" onclick = $("#menu-close").click();>Contato</a>
+                <li><a href='#'>Para Teste</a>
+                    <ul>
+                        <li><a href='#'>Sub Product</a></li>
+                        <li><a href='#'>Sub Product</a></li>
+                    </ul>
                 </li>
             </ul>
-        </div>
+            </li>
+            <li><a href='#orcamento'>Orçamentos</a></li>
+            <li><a href='#galeria'>Galeria</a></li>
+            <li><a href='#faq'>Perguntas Frequentes</a></li>
+            <li><a href='#contact'>Contato</a></li>
+        </ul>
+        </nav>
+    </header>
 
-        <div class="dropdown theNavBar linkis">        
-            <a href="#top" id="inBtn">Início</a>
-            <a href="#sobrenos" id="sbBtn">Sobre Nós</a>
-            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="scBtn">Serviços
-                <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu dropList" aria-labelledby="dropdownMenu1">
-                <li><a class="dropA" href="#" id="cgBtn">Contabilidade em Geral</a></li>
-                <li><a class="dropA" href="#prural" id="prBtn">Produtor Rural</a></li>
-            </ul>
-            <a href="#orcamento" id="orBtn">Orçamentos</a>
-            <a href="#galeria" id="glBtn">Galeria</a>
-            <a href="#faq">Perguntas Frequentes</a>
-            <a href="#contact" id="ctBtn">Contato</a>
-        </div>
 
         <!-- Header -->
         <section id="top" class="header bg1 spacetop">
@@ -525,5 +511,6 @@
     <script src="js/formspree.js"></script>    
     <script src="js/galleria/galleria-1.4.2.js"></script>
     <script src="js/galleriaCaller.js"></script>
+    <script src="js/nav-function.js"></script> 
 </body>
 </html>
