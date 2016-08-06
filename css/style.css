@@ -9,6 +9,11 @@ input[type="text"], input[type="email"]  {
     padding-left: 20px;
 }
 
+footer{
+	padding: 0px !important;
+	margin-top: 0px !important;
+}
+
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus  {
     background: white;
     color: #337ab7;
@@ -337,6 +342,11 @@ textarea{
    	background-size:contain;
    	background-repeat:no-repeat;
 	border: 0px;
+}
+
+.dropList{
+	float: left;
+    margin-left: 33%;
 }
 
 
