@@ -22,7 +22,15 @@ and (max-width: 403px)
 {
   #empresasBt, #ruralBt{
   	width: 45% !important;
-  	font-size: 14px;
+  	font-size: 12px;
+  }
+
+  #logoImg {
+    width: 250px !important;
+  }
+
+  #blackDiv{
+  	margin-top: -200px !important;
   }
 }
 
