@@ -1,14 +1,37 @@
+#divDestaque{
+	background-color: black;
+	opacity: 0.7;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("img/upBar.png");
+}
+
+.indexPar{
+	color: white;
+	z-index: 700;
+ 	position: relative;
+  	font-size: 20px;
+  	margin-top: 30px;
+  	font-family: "TW Cen MT";
+}
+
+.secondPar{
+	margin-top: 0px !important;
+}
+
 #mainPage{
 	overflow: hidden;
 }
 
 #mainPage #logoImg{
 	position: relative;
+	margin-top: 90px !important;
 }
 
 #blackDiv{
 	background-color: black;
-    height: 120%;
+    height: 170%;
     position: absolute;
     width: 100%;
     opacity: 0.7;
@@ -133,6 +156,10 @@ textarea{
     margin-top: -50px;
 }
 
+footer{
+	font-size: 18px;
+}
+
 .aboutTitle{
 	font-weight: bold;
 }
@@ -222,6 +249,126 @@ textarea{
 	background: white url(../img/wifi.png) no-repeat;
 }
 
+#contract
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/contract.png) no-repeat;
+}
+
+#itr
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/itr.png) no-repeat;
+}
+
+#controleGado
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/controleGado.png) no-repeat;
+}
+
+#vaccination
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/vaccination.png) no-repeat;
+}
+
+#fruits
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/fruits.png) no-repeat;
+}
+
+#lucroImob
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/lucroImob.png) no-repeat;
+}
+
+#reasonBook
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/reasonBook.png) no-repeat;
+}
+
+#credit
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/credit.png) no-repeat;
+}
+
+#irenda
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/irenda.png) no-repeat;
+}
+
+#cadastro
+{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: white url(../img/cadastro.png) no-repeat;
+}
+
 #gallery 
 {
 	margin-left: auto;
@@ -248,4 +395,57 @@ textarea{
 .navHeader{
 	position: fixed;
 	z-index: 600;
+}
+
+.defaultSc{
+	height: auto !important;
+}
+
+@media only screen
+and (min-width: 992px)
+{
+  .defaultSc{
+  	height: 330px !important;
+  }
+}
+
+@media only screen
+and (min-width: 1200px)
+{
+  .defaultSc{
+  	height: 240px !important;
+  }
+}
+
+.funcDiv{
+	height: 240px;
+}
+
+.photoFunc{
+	height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    border: 2px solid #b1b1b1;
+}
+
+#thiago{
+	background: url(../img/thiago.png) no-repeat;
+}
+
+.facebookLBtn{
+	background: url(../img/facebookBtn.png) no-repeat;
+	background-size:contain;
+  	background-repeat:no-repeat;
+	height: 30px;
+	width: 30px;
+	border: 0px;
+}
+
+.linkedinLBtn{
+	background: url(../img/linkedinBtn.png) no-repeat;
+	background-size:contain;
+  	background-repeat:no-repeat;
+	height: 30px;
+	width: 30px;
+	border: 0px;
 }
