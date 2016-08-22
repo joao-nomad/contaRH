@@ -36,37 +36,16 @@ $("#facebook").click(function() {
 setInterval(function(){
     var $header = $("#top");
 
-    if ($header.hasClass("bg4") == true)
-    {
-        $header.removeClass("bg4");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-       $header.addClass("bg1");
-    }
-    else if ($header.hasClass("bg1") == true)
+    if ($header.hasClass("bg1") == true)
     {
         $header.removeClass("bg1");
         $header.fadeOut("fast");
         $header.fadeIn("fast");
-        $header.addClass("bg5");
-    }
-    else if ($header.hasClass("bg5") == true)
-    {
-        $header.removeClass("bg5");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-        $header.addClass("bg2");
+       $header.addClass("bg2");
     }
     else if ($header.hasClass("bg2") == true)
     {
         $header.removeClass("bg2");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-        $header.addClass("bg6");
-    }
-    else if ($header.hasClass("bg6") == true)
-    {
-        $header.removeClass("bg6");
         $header.fadeOut("fast");
         $header.fadeIn("fast");
         $header.addClass("bg3");
@@ -76,9 +55,25 @@ setInterval(function(){
         $header.removeClass("bg3");
         $header.fadeOut("fast");
         $header.fadeIn("fast");
-        $header.addClass("bg4");
+        $header.addClass("bg1");
     }
 }, 4000);
+
+
+$('#telefone').mask("(99) 9999-9999");
+
+$('#celular').focusout(function(){
+    var phone, element;
+    element = $(this);
+    element.unmask();
+    phone = element.val().replace(/\D/g, '');
+    if(phone.length > 10) {
+        element.mask("(99) 99999-999?9");
+    } else {
+        element.mask("(99) 9999-9999?9");
+    }
+}).trigger('focusout');
+
 
 $("#inBtn, #sbBtn, #scBtn, #cgBtn, #prBtn, #orBtn, #glBtn, #pfBtn, #ctBtn").click(function() {
     //alert('vai');
