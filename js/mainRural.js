@@ -79,13 +79,6 @@ setInterval(function(){
         $header.removeClass("bg2");
         $header.fadeOut("fast");
         $header.fadeIn("fast");
-        $header.addClass("bg3");
-    }
-    else if ($header.hasClass("bg3") == true)
-    {
-        $header.removeClass("bg3");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
         $header.addClass("bg1");
     }
 }, 4000);
