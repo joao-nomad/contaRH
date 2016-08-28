@@ -1,6 +1,13 @@
 #destaqueTitulo{display: none;}
 #destaqueTexto{display: none;}
 
+#itrImg{background: url(../img/itrD.png) no-repeat;}
+#preImg{background: url(../img/prevD.png) no-repeat;}
+#controleImg{background: url(../img/prodD.png) no-repeat;}
+#notaImg{background: url(../img/notD.png) no-repeat;}
+#sustentImg{background: url(../img/susD.png) no-repeat;}
+
+#itrImg:hover, #preImg:hover, #controleImg:hover, #notaImg:hover, #sustentImg:hover{border-color: #337ab7;}
 
 #divDestaque{
 	background-color: black;
