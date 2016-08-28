@@ -23,7 +23,6 @@ $("#theClose, #homeLink, #aboutLink, #serviceLink, #galleryLink, #contactLink").
     $("#sideBar, #theClose").animate({width:'toggle'}, 350);
 });
 
-
 $("#facebook").click(function() {
     window.open(
         "https://www.facebook.com/Contarh-146942322374267/?fref=ts",

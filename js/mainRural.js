@@ -1,3 +1,34 @@
+//Destaques Btn
+$("#itrImg").click(function() {
+    $("#destaqueTitulo, #destaqueTexto").css("display", "block");
+    $("#destaqueTitulo").text("ITR");
+    $("#destaqueTexto").text("O Imposto sobre a Propriedade Rural (ITR) é um tributo federal que se cobra anualmente das propriedades rurais. Precisa ser pago pelo proprietário da terra, pelo titular do domínio útil ou pelo possuidor a qualquer título.");
+});
+
+$("#preImg").click(function() {
+    $("#destaqueTitulo, #destaqueTexto").css("display", "block");
+    $("#destaqueTitulo").text("Previdência Social");
+    $("#destaqueTexto").text("Produtor que tiver sua inscrição no INSS passa a ter direito aos benefícios como Auxílio-Doença, Auxílio-Reclusão, Aposentadoria por Idade, Aposentadoria por Invalidez, Pensão por Morte, Salário-Família, Salário-Maternidade e Auxílio-Acidente de Trabalho.");
+});
+
+$("#controleImg").click(function() {
+    $("#destaqueTitulo, #destaqueTexto").css("display", "block");
+    $("#destaqueTitulo").text("Controle de Funcionários");
+    $("#destaqueTexto").text("Realizamos o registro dos funcionários rurais, tais como seu controle de horas, benefícios, contribuição INSS, entre outros. O trabalhador rural empregado deve ter a carteira assinada. A inscrição ocorre a partir da assinatura e do registro no PIS/Pasep, providências a cargo do empregador.");
+});
+
+$("#notaImg").click(function() {
+    $("#destaqueTitulo, #destaqueTexto").css("display", "block");
+    $("#destaqueTitulo").text("Nota Fiscal");
+    $("#destaqueTexto").text("Realizamos o pedido de Nota Fiscal e regularização do produtor Rural Pessoa Física e Jurídica. Nota Fiscal é o documento que registra, para fins fiscais, as operações de circulação de mercadorias e de prestações de serviços, ocorrida entre as partes. A Nota Fiscal do Produtor atesta a responsibilidade do produtor pela segurança, qualidade e descrição do produto na nota: quantidade, preço, variedade, classificação e embalagem.");
+});
+
+$("#sustentImg").click(function() {
+    $("#destaqueTitulo, #destaqueTexto").css("display", "block");
+    $("#destaqueTitulo").text("Sustentação do Investimento Rural");
+    $("#destaqueTexto").text("Com o Programa de Sustentação do Investimento Rural, você pode adquirir máquinas, equipamentos agrícolas e caminhões de fabricação nacional. Crédito destinado para insumos agropecuários de pequenos e médios produtores.");
+});
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
     //e.preventDefault();
