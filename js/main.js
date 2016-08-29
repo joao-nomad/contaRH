@@ -47,34 +47,6 @@ setInterval(function(){
         $header.removeClass("bg1");
         $header.fadeOut("fast");
         $header.fadeIn("fast");
-        $header.addClass("bg5");
-    }
-    else if ($header.hasClass("bg5") == true)
-    {
-        $header.removeClass("bg5");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-        $header.addClass("bg2");
-    }
-    else if ($header.hasClass("bg2") == true)
-    {
-        $header.removeClass("bg2");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-        $header.addClass("bg6");
-    }
-    else if ($header.hasClass("bg6") == true)
-    {
-        $header.removeClass("bg6");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
-        $header.addClass("bg3");
-    }
-    else if ($header.hasClass("bg3") == true)
-    {
-        $header.removeClass("bg3");
-        $header.fadeOut("fast");
-        $header.fadeIn("fast");
         $header.addClass("bg4");
     }
 }, 4000);

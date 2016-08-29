@@ -477,11 +477,11 @@ and (min-width: 1000px)
 	#textosServicos
 	{
 		margin-left: 300px;
-	    margin-top: -720px;
-	    height: 700px !important;
-	    background-color: #f8f8f8;
-	    color: black;
-	    overflow: auto;
+    	margin-top: -770px;
+    	height: 750px !important;
+    	background-color: #f8f8f8;
+    	color: black;
+    	overflow: auto;
 	}
 
 	#navServ
@@ -649,4 +649,9 @@ and (min-width: 1000px)
     border-radius: 90px;
     border: 2px solid #b1b1b1;
     background-size: cover;
+}
+
+@font-face {
+        font-family: 'TW Cen MT';
+        src: url(fonts/TCB_____.TTF);
 }
