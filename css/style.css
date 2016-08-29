@@ -559,3 +559,94 @@ and (min-width: 1000px)
     background-size: cover;
 }
 
+.educImg
+{
+	background: url(../img/iducImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+
+.hotelImg
+{
+	background: url(../img/hotelImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+
+.industImg
+{
+	background: url(../img/industImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.shopImg
+{
+	background: url(../img/shopImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.pservicoImg
+{
+	background: url(../img/pservicoImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+
+.agroImg
+{
+	background: url(../img/agroImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+
+.saudeImg
+{
+	background: url(../img/saudeImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.liberalImg
+{
+	background: url(../img/liberalImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
