@@ -460,3 +460,102 @@ and (min-width: 1200px)
 	width: 30px;
 	border: 0px;
 }
+
+#textosServicos
+{
+	font-size: 20px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+#servLinks a{cursor: pointer;}
+
+@media only screen
+and (min-width: 1000px)
+{
+	#textosServicos
+	{
+		margin-left: 300px;
+	    margin-top: -720px;
+	    height: 700px !important;
+	    background-color: #f8f8f8;
+	    color: black;
+	    overflow: auto;
+	}
+
+	#navServ
+	{
+		width: 25%;
+	    margin-left: 0px;
+	}
+}
+
+#tituloServ{margin-top: 20px;}
+
+.mercImg
+{
+	background: url(../img/supermercado.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.combImg
+{
+	background: url(../img/combImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.atacImg
+{
+	background: url(../img/atacImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.varejImg
+{
+	background: url(../img/varejImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.condoImg
+{
+	background: url(../img/condoImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
+.civilImg
+{
+	background: url(../img/civilImg.png) no-repeat;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid #b1b1b1;
+    background-size: cover;
+}
+
